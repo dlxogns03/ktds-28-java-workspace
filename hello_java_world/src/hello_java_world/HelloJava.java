@@ -7,5 +7,9 @@ public class HelloJava {
 		System.out.println("Hello java world!");
 		
 	}
+	
+	public void aaa() {
+		return ;
+	}
 
 }

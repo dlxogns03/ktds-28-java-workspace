@@ -5,6 +5,15 @@ public class PrintMyInfo {
 		
 		System.out.println("내 이름은 \"이태훈\" 나이는 \"24세\" 입니다.주말에는 \\ ");
 		
+		System.out.println("properties = " + System.getProperty("java.version"));
+		
+		System.out.println("property = " + System.getProperty("java.class.path"));
+		
+		String a = System.getProperty("java.version");
+		
+		System.out.println(a);
+	
 	}
-
+	
 }
+
