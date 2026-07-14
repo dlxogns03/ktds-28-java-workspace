@@ -6,11 +6,11 @@ public class Exam2 {
 		
 		int father = 40;
 		int mother = 36;
-		int daughter = 19;
+		int daughter = 11;
 		
 	
 		
-		int adultOneWayFlightFare = 300_000;
+		int adultOneWayFlightFare = 400_000;
 		int kidOneWayFlightFare = 120_000;
 		
 		// 3인 가족이 100만원으로 비행기를 타고 편도 여행을 가려합니다.
@@ -23,90 +23,59 @@ public class Exam2 {
 		// 여행을 떠날 수 없다면 "다음에가자"
 		// 를 출력해보세요.
 		int price = 0;
+		int adalt = 0;
+		int kid = 0;
 		
-		if (daughter >= 19) {
-			
-			price = adultOneWayFlightFare * 3;
-			
-			if ( money >= price) {
-				System.out.println("여행가자");
-			}
-			else {
-				System.out.println("담에가자");
+		int[] users = {father, mother, daughter};
+		
+		for (int i = 0; i < users.length; i++) {
+			if (users[i] >= 19) {
+				adalt++;
+			}else {
+				kid++;
 			}
 			
 		}
 		
 		
-		else {
-			
-			price = adultOneWayFlightFare * 2 + kidOneWayFlightFare;
-			
-			if(money >= price) {
-				System.out.println("여행가자");
-			}
-			else {
-				System.out.println("담에가자");
-			}
+		price = (adultOneWayFlightFare * adalt) + (kidOneWayFlightFare * kid);
+		
+		
+		if (price <= money) {
+			System.out.println("여행가자");
+		}else {
+			System.out.println("담에 가자");
 		}
-		
-		
-		
-		
-		
 		
 		
 		/*
-		if (father >= 19 && mother >= 19 && daughter >= 19) {
-			if ( money >= adultOneWayFlightFare * 3) {
-				System.out.println("여행가자 ");
-			}
-			else {
-				System.out.println("다음에 가자");
-			}
-		}
-		else if (father >= 19 && mother >= 19 && daughter <= 19) {
-			
-			if(money >= adultOneWayFlightFare * 2 + kidOneWayFlightFare) {
-				System.out.println("여행가자");
-				
-			}
-			else {
-				System.out.println("다음에 가자");
-			}
+		if(father >= 19) {
+			adalt ++;
+		} else {
+			kid ++;
 		}
 		
-		*/
-		
-		
-		
-		
-		
-		
-		
-		////////////////////////
-		/*
-		else if (father >= 19 && mother <= 19 && daughter <= 19) {
-			
-			if(money >= adultOneWayFlightFare + kidOneWayFlightFare * 2) {
-				System.out.println("여행가자");
-				
-			}
-			else {
-				System.out.println("다음에 가자");
-			}
+		if (mother >= 19) {
+			adalt++;
+		} else {
+			kid ++;
 		}
-		else if (father <= 19 && mother <= 19 && daughter <= 19) {
-			
-			if(money >=  kidOneWayFlightFare * 3) {
-				System.out.println("여행가자");
-				
-			}
-			else {
-				System.out.println("다음에 가자");
-			}
+		
+		if(daughter >= 19) {
+			adalt++;
+		} else {
+			kid ++;
+		}
+		
+		price = (adultOneWayFlightFare * adalt) + (kidOneWayFlightFare * kid);
+		
+		if (price <= money) {
+			System.out.println("여행가자");
+		} else {
+			System.out.println("담에가자");
 		}
 		*/
-
+		
+		
 	}
 }
