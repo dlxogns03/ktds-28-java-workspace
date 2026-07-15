@@ -1,6 +1,8 @@
 package workflow;
 
 public class DiceGameArray {
+	
+	
 	public static boolean isNotArrive (int[] playerPosition) {
 		final int GOAL_POSITION = 127;
 		
