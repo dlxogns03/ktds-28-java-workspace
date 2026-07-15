@@ -31,6 +31,8 @@ public class DiceGame {
 		
 		//////////////////////////
 		
+		
+	/*
 		while(player1 < GOAL_POSITION && 
 			   player2 < GOAL_POSITION && 
 			   player3 < GOAL_POSITION && 
@@ -43,6 +45,8 @@ public class DiceGame {
 			 * 
 			 * 
 			 */
+		
+		/*
 			random = Math.random();
 			dice1 = (int)(random * 10);
 			System.out.println(dice1);
@@ -101,7 +105,7 @@ public class DiceGame {
 			 * 
 			 * 
 			 */
-			
+		/*
 			random = Math.random();
 			dice1 = (int)(random * 10);
 			System.out.println(dice1);
@@ -157,7 +161,7 @@ public class DiceGame {
 			 * 
 			 * 
 			 */
-			
+		/*
 			random = Math.random();
 			dice1 = (int)(random * 10);
 			System.out.println(dice1);
@@ -228,7 +232,7 @@ public class DiceGame {
 			
 			
 			
-			
+		/*
 			random = Math.random();
 			dice1 = (int)(random * 10);
 			System.out.println(dice1);
@@ -278,12 +282,76 @@ public class DiceGame {
 				
 			}
 		}
+		*/
 		
-		System.out.println("player 1 : " + player1);
-		System.out.println("player 2 : " + player2);
-		System.out.println("player 3 : " + player3);
-		System.out.println("player 4 : " + player4);
+		int[] playersPoint = {player1, player2, player3, player4};
 		
+		while(playersPoint[0] < GOAL_POSITION && 
+				playersPoint[1] < GOAL_POSITION && 
+				playersPoint[2] < GOAL_POSITION && 
+				playersPoint[3] < GOAL_POSITION) {
+			
+			for(int i = 0 ; i < playersPoint.length ; i++) {
+				
+				System.out.println("====== player" + (i + 1) + " =====");
+				
+				random = Math.random();
+				dice1 = (int)(random * 10);
+				System.out.println("첫번째 주사위 " + dice1);
+				
+				random = Math.random();
+				dice2 = (int) (random * 10);
+				System.out.println("두번째 주사위 " + dice2);
+				
+				place = dice1 + dice2;
+				
+				if((place % 3) == 0) {
+					place *= -1;
+					System.out.print("플레이어가 이동할 칸수 ");
+					System.out.println(place);
+					playersPoint[i] -= place;
+					
+					if (playersPoint[i] < 0 ) {
+						
+						playersPoint[i] = 0;
+					}
+					
+					System.out.print("player" + (i + 1) + "의 위치 ");
+					System.out.println(playersPoint[i]);
+					System.out.println("==========");
+					
+				} else if (dice1 == dice2) {
+					
+					place *= 2;
+					System.out.print("플레이어가 이동할 칸수 ");
+					System.out.println(place);
+					
+					playersPoint[i] += place;
+					
+					System.out.print("player" + (i + 1) + "의 위치 ");
+					System.out.println(playersPoint[i]);
+					System.out.println("==========");
+					
+				}else {
+					
+					System.out.print("플레이어가 이동할 칸수 ");
+					System.out.println(place);
+					playersPoint[i] += place;
+					System.out.print("player" + (i + 1) + "의 위치 ");
+					System.out.println(playersPoint[i]);
+					System.out.println("==========");
+					
+				}
+				
+				
+			}
+		}
+		System.out.println("==========");
+		System.out.println("player 1 : " + playersPoint[0]);
+		System.out.println("player 2 : " + playersPoint[1]);
+		System.out.println("player 3 : " + playersPoint[2]);
+		System.out.println("player 4 : " + playersPoint[3]);
+		System.out.println("==========");
 		
 	}
 

@@ -7,11 +7,14 @@ public class ForExam {
 		
 		// 1번
 		int sum = 0;
+		
 		for(int i = 1 ; i< 101 ; i++) {
 			
 			sum += i ;
 		}
+		
 		System.out.println(sum);
+		
 		
 		
 		//2번
@@ -20,6 +23,7 @@ public class ForExam {
 		for(int i = 1 ; i < 101 ; i++) {
 			
 			if ((i % 2) == 1) {
+				
 				sum += i;
 			}
 		}
@@ -27,15 +31,24 @@ public class ForExam {
 		
 		
 		
+		
+		
 		//3번 
 		
 		for(int i = 1; i < 101 ; i++) {
+			
 			if ((i % 3) == 0) {
+				
 				System.out.println(i);
+				
 			}else if ((i % 5) == 0) {
+				
 				System.out.println(i);
+				
 			}else if((i % 6) == 0) {
+				
 				System.out.println(i);
+				
 			}
 		}
 		
