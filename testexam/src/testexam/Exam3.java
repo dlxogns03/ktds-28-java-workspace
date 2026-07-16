@@ -19,6 +19,7 @@ public class Exam3 {
 	
 	
 	public static boolean oddAndEven(int num) {
+		
 		if (num % 2 == 1) {
 			return false;
 		}
