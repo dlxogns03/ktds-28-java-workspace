@@ -1,6 +1,6 @@
 package oop;
 
-import com.ktdsuniversity.edu.oop.exam.CraneGameMachine;
+
 import com.ktdsuniversity.edu.oop.exam.Student;
 
 public class Test {
@@ -20,11 +20,11 @@ public class Test {
 		System.out.println(student.getABCDF(credit));
 		
 		
-		CraneGameMachine game = new CraneGameMachine();
-		game.insertCoin();
-		System.out.println(game.isInsertCoin);
-		if (game.isInsertCoin) {
-			game.doGame();
+//		CraneGameMachine game = new CraneGameMachine();
+//		game.insertCoin();
+//		System.out.println(game.isInsertCoin);
+//		if (game.isInsertCoin) {
+//			game.doGame();
 		}
 		
 	}
