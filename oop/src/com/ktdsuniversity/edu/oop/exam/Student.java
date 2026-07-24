@@ -6,6 +6,16 @@ public class Student {
 	private int cpp ;
 	private int csharp ;
 	
+	public Student() {
+//		this.java = 100;
+//		this.python = 100;
+//		this.cpp = 100;
+//		this.csharp = 100;
+		
+		// 생성자 내부에서는 다른 생성자의 호출이 가능하다.
+		//호출장법 : this();
+		this(100,100,100,100);
+	}
 	public Student(int java, int python, int cpp, int csharp) {
 		this.java = java;
 		this.python = python;
@@ -15,7 +25,7 @@ public class Student {
 	
 	
 	
-	private int getSumAllScore () {
+	public int getSumAllScore () {
 		
 		
 		return java + python + cpp + csharp;
