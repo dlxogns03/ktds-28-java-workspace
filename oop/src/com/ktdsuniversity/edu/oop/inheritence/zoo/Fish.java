@@ -21,4 +21,6 @@ public class Fish extends Animal{
 		System.out.println(this.scales);
 		System.out.println(this.gill);
 	}
+	
+	
 }
