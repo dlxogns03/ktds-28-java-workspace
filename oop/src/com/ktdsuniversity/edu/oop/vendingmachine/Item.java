@@ -20,5 +20,9 @@ public class Item {
 		this.itemPrice = itemPrice;
 		this.itemStock = itemStock;
 	}
+	
+	public void getName() {
+		System.out.println(this.itemName);
+	}
 
 }

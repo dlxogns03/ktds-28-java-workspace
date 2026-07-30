@@ -1,7 +1,11 @@
-package com.ktdsuniversity.edu.oop.inheritence.zoo;
+package com.ktdsuniversity.edu.oop.collection.list;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ktdsuniversity.edu.oop.inheritence.zoo.Animal;
+import com.ktdsuniversity.edu.oop.inheritence.zoo.Bird;
+import com.ktdsuniversity.edu.oop.inheritence.zoo.Fish;
 
 public class Zoo {
 	public static void getBird(Animal animal) {

@@ -1,22 +1,29 @@
-package cafe;
+package com.ktdsuniversity.edu.oop.collection.list;
 
+import java.util.ArrayList;
+import java.util.List;
 
+import cafe.ComicsBook;
 
 public class ComicsBookCafe {
-	private ComicsBook[] books;
+	private List<ComicsBook> books;
 	private int take;
 	
-	public ComicsBookCafe(ComicsBook[] books) {
-		this.books = books;
+	public ComicsBookCafe() {
+		this.books = new ArrayList<>();
+	}
+	
+	public void addBook(ComicsBook book) {
+		this.books.add(book);
 	}
 	
 	public void displayBooks() {
 		System.out.println("=== 만화책 목록");
-		for(int i = 0 ; i < this.books.length ; i++) {
+		for(int i = 0 ; i < this.books.size() ; i++) {
 			
 			
 			
-			ComicsBook book = this.books[i];
+			ComicsBook book = this.books.get(i);
 //			
 //			if(book == null) {
 //				continue;
@@ -45,7 +52,7 @@ public class ComicsBookCafe {
 		
 	}
 	
-	public ComicsBook[] getBooks() {
+	public List<ComicsBook> getBooks() {
 		return this.books;
 	}
 }
