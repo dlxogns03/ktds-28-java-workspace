@@ -47,6 +47,7 @@ public class UpDownGame {
 			
 			
 		}
+		keybord.close();// app <-> keybord 사이에 생성된 Pipe를 제거
 		
 	}
 

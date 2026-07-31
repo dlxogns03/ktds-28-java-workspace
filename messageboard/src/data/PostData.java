@@ -5,6 +5,8 @@ package data;
 
 public class PostData {
 	
+	
+	CommentData commentData;
 	private String title;
 	private String writer;
 	private int viewcount;
@@ -16,6 +18,14 @@ public class PostData {
 		this.writer = writer;
 		this.contents = contents;
 		this.day = day;
+	}
+	
+	
+	
+	
+	
+	public void view() {
+		this.viewcount++;
 	}
 	
 }
