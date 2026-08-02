@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/classexam/classexam.iml" filepath="$PROJECT_DIR$/classexam/classexam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_java_world/hello_java_world.iml" filepath="$PROJECT_DIR$/hello_java_world/hello_java_world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ifexam/ifexam.iml" filepath="$PROJECT_DIR$/ifexam/ifexam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ktds-28-java-workspace.iml" filepath="$PROJECT_DIR$/.idea/ktds-28-java-workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/messageboard/messageboard.iml" filepath="$PROJECT_DIR$/messageboard/messageboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operations/operations.iml" filepath="$PROJECT_DIR$/operations/operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operations_exam/operations_exam.iml" filepath="$PROJECT_DIR$/operations_exam/operations_exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print_my_age/print_my_age.iml" filepath="$PROJECT_DIR$/print_my_age/print_my_age.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print_my_name/print_my_name.iml" filepath="$PROJECT_DIR$/print_my_name/print_my_name.iml" />
+      <module fileurl="file://$PROJECT_DIR$/print_my_name_age/print_my_name_age.iml" filepath="$PROJECT_DIR$/print_my_name_age/print_my_name_age.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rastrant/rastrant.iml" filepath="$PROJECT_DIR$/rastrant/rastrant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restrant/restrant.iml" filepath="$PROJECT_DIR$/restrant/restrant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/string/string.iml" filepath="$PROJECT_DIR$/string/string.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testexam/testexam.iml" filepath="$PROJECT_DIR$/testexam/testexam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/variables/variables.iml" filepath="$PROJECT_DIR$/variables/variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workflow/workflow.iml" filepath="$PROJECT_DIR$/workflow/workflow.iml" />
+    </modules>
+  </component>
+</project>
