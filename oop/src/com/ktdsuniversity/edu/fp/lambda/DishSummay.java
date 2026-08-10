@@ -1,13 +1,11 @@
 package com.ktdsuniversity.edu.fp.lambda;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-import com.ktdsuniversity.edu.fp.anonymous.inf.Compare;
 import com.ktdsuniversity.edu.fp.objects.Dish;
 import com.ktdsuniversity.edu.fp.objects.DishList;
-import com.ktdsuniversity.edu.fp.objects.enums.DishType;
-import com.ktdsuniversity.edu.fp.objects.enums.FoodType;
 
 public class DishSummay {
 	private List<Dish> dishes ;
@@ -21,11 +19,19 @@ public class DishSummay {
 	
 	
 	public void printAllDishesBy (Predicate<Dish> condition) {
-		for (int i =0; i < this.dishes.size(); i++) {
-			if ( condition.test(this.dishes.get(i))) {
-				System.out.println(this.dishes.get(i));
-			}
-		}
+		
+		List<Dish> temp = new ArrayList<>();
+		temp.addAll(this.dishes);
+		
+		temp.removeIf(condition.negate());
+		
+		temp.forEach(System.out::println);
+		
+//		for (int i =0; i < this.dishes.size(); i++) {
+//			if ( condition.test(this.dishes.get(i))) {
+//				System.out.println(this.dishes.get(i));
+//			}
+//		}
 	}
 	
 	
@@ -59,4 +65,8 @@ public class DishSummay {
 		}
 		System.out.println(totalCalories/(double) size);
 	}
+	
+	
+	//stream은 중간연산만 써있으면 동작이 안됨 항상 최종연산이 있어야함
+	
 }
