@@ -217,6 +217,7 @@ public class Cities {
 		
 		//16
 		filterLevelParentId(path, filename);
+		System.out.println("=".repeat(50));
 	}
 
 }
