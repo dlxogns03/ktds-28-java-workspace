@@ -112,42 +112,6 @@ public class Main {
 
 		keybord.close();
 
-
-
-
-
-//		community.fillInPost("      d    ","   d ","26.08.01","testTest");
-//		community.fillInPost("xorhsdl   ","test2","26.08.02","testTest2");
-//
-//		community.allPrintPost();
-//		System.out.println("====");
-//		community.postModify(0,"test");
-//		community.removePost(0);
-//		System.out.println("====");
-//		community.writeComment(0,"asdf","asdf","testcomment");
-//		community.printPost(0);
-//
-//	community.removePost(0);
-//		System.out.println("===");
-//		community.allPrintPost();
-//		community.removePost(0);
-//		community.postNumber();
-//
-//		community.removeComment(0, 0);
-//		community.removePostCommentAll(0);
-//
-//		community.writeComment(0,"asdf","asdf","asdf");
-//		community.allPrintPost();
-//		System.out.println("===");
-//		community.recommendcount(0,0);
-//		System.out.println("-===");
-//		community.SearchPost("ㅁㄴㅇㄻㄴㅇㄹ");
-//		community.removePostCommentAll(0);
-//		community.allPrintPost();
-//		community.printPost(0);
-//		community.removeAll();
-//		System.out.println("====");
-//		community.allPrintPost();
 	}
 
 	private static void wrirecomment() {
