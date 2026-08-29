@@ -1,6 +1,10 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
 
 import data.PostData;
+import utils.Input;
 
 public class Main {
 	static Community community = new Community();
@@ -15,7 +19,9 @@ public class Main {
 		List<PostData> posts = new ArrayList<>();
 		int choice = 0 ;
 
-
+//		Input input = new Input();
+//		
+//		input.inputInt("번호를 입력해주세요");
 
 
 
@@ -84,6 +90,7 @@ public class Main {
 				}else if(choice == 2){
 
 					choiceDeleteComment();
+					
 				}else if(choice == 3 ){
 					System.out.println("1.게시물 댓글 전체 삭제 , 2. 전체 삭제");
 					choice = keybord.nextInt();
@@ -112,6 +119,14 @@ public class Main {
 
 		keybord.close();
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 70480976a316154d3e6d4a942cc155cef8e5c820
 	}
 
 	private static void wrirecomment() {
@@ -161,11 +176,13 @@ public class Main {
 			}
 		}
 
-
+		System.out.println("재목: ");
+		String title = keybord.nextLine();
+		
 		System.out.println("내용 입력 : ");
 		contents = keybord.nextLine();
 
-		community.postModify(num,contents);
+		community.postModify(num,title,contents);
 
 	}
 

@@ -86,7 +86,8 @@ public class PostData {
 
 	}
 
-	public void modifyContents(String contents){
+	public void modifyContents(String title , String contents){
+		this.title = title;
 		this.contents = contents;
 	}
 

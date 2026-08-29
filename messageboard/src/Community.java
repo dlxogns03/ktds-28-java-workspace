@@ -16,7 +16,7 @@ public class Community implements  CommunityFuntions{
     @Override
     public void fillInPost(String title, String writer, String day, String contents) {
 
-        if(title.trim().isEmpty() && title.length() <= 30){
+        if(title.trim().isEmpty() || title.length() <= 30){
 
             ArticleException aie = new ArticleException("제목을 다시 입력해주세요 ");
             throw aie;
@@ -65,14 +65,14 @@ public class Community implements  CommunityFuntions{
     }
     //4
     @Override
-    public void postModify(int num, String contents) {
+    public void postModify(int num,String title, String contents) {
 
 
         if(num >= postDataList.size() || num <0){
             System.out.println("잘못된 게시글 번호입니다");
             return;
         }
-        postDataList.get(num).modifyContents(contents);
+        postDataList.get(num).modifyContents(title, contents);
 
     }
     //5
