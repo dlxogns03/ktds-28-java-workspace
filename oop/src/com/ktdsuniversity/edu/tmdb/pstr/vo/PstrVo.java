@@ -1,9 +1,15 @@
 package com.ktdsuniversity.edu.tmdb.pstr.vo;
 
+import com.ktdsuniversity.edu.tmdb.mv.vo.MvVo;
+
 public class PstrVo {
 	private String pstrId;
 	private String mvId;
 	private String pstrUrl;
+	
+	
+	//하나의 포스터는 하나의 영화를 위한것이다.
+	private MvVo mvVo;
 	
 	public String getPstrId() {
 		return pstrId;

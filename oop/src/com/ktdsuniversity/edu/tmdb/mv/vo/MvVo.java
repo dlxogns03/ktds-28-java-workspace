@@ -1,5 +1,15 @@
 package com.ktdsuniversity.edu.tmdb.mv.vo;
 
+import java.util.List;
+
+import com.ktdsuniversity.edu.tmdb.appr.vo.ApprVo;
+import com.ktdsuniversity.edu.tmdb.bckgrnd.vo.BckgrndVo;
+import com.ktdsuniversity.edu.tmdb.flmmkr.vo.FlmmkrVo;
+import com.ktdsuniversity.edu.tmdb.gnr.vo.GnrVo;
+import com.ktdsuniversity.edu.tmdb.kwrd.vo.KwrdVo;
+import com.ktdsuniversity.edu.tmdb.pstr.vo.PstrVo;
+import com.ktdsuniversity.edu.tmdb.vd.vo.VdVo;
+
 public class MvVo {
 	private String mvId;
 	private String ttl;
@@ -14,9 +24,32 @@ public class MvVo {
 	private String tgln;
 	private String orgnlTtl;
 	private String shwng;
-	private int bdgt;
-	private int bxOffcRvn;
+	private long bdgt;
+	private long bxOffcRvn;
 	private String lnng;
+	
+	//하나의 영화는 여러개의 동영상을 가지고 있다.
+	private List<VdVo> vdList;
+	
+	//하나의 영화는 여러개의 배경을 가지고 있다.
+	private List<BckgrndVo> bckgrndList;
+	
+	//하나의 영화는 여러개의 포스터를 가지고 있다.
+	private List<PstrVo> pstrList;
+	
+	
+	//하나의 영화는 여러명이 제작했다.
+	private List<FlmmkrVo> flmmkrList;
+	
+	//하나의 영화에 여러명이 출연했다.
+	private List<ApprVo> apprVoList;
+	
+	//하나의 영화는 여러개의 장르가 있다.
+	private List<GnrVo> gnrVoList;
+	
+	//하나의 영화는 여러개의 키워드가 있다.
+	private List<KwrdVo> kwrdVoList;
+	
 	public String getMvId() {
 		return mvId;
 	}
@@ -62,7 +95,7 @@ public class MvVo {
 	public String getxUrl() {
 		return xUrl;
 	}
-	public void setxUrl(String xUrl) {
+	public void setXUrl(String xUrl) {
 		this.xUrl = xUrl;
 	}
 	public String getInstgrmUrl() {
@@ -95,16 +128,16 @@ public class MvVo {
 	public void setShwng(String shwng) {
 		this.shwng = shwng;
 	}
-	public int getBdgt() {
+	public long getBdgt() {
 		return bdgt;
 	}
-	public void setBdgt(int bdgt) {
+	public void setBdgt(long bdgt) {
 		this.bdgt = bdgt;
 	}
-	public int getBxOffcRvn() {
+	public long getBxOffcRvn() {
 		return bxOffcRvn;
 	}
-	public void setBxOffcRvn(int bxOffcRvn) {
+	public void setBxOffcRvn(long bxOffcRvn) {
 		this.bxOffcRvn = bxOffcRvn;
 	}
 	public String getLnng() {
@@ -113,6 +146,56 @@ public class MvVo {
 	public void setLnng(String lnng) {
 		this.lnng = lnng;
 	}
+	
+	
+	
+	
+	public List<VdVo> getVdList() {
+		return this.vdList;
+	}
+	public void setVdList(List<VdVo> vdList) {
+		this.vdList = vdList;
+	}
+	public List<BckgrndVo> getBckgrndList() {
+		return this.bckgrndList;
+	}
+	public void setBckgrndList(List<BckgrndVo> bckgrndList) {
+		this.bckgrndList = bckgrndList;
+	}
+	public List<PstrVo> getPstrList() {
+		return this.pstrList;
+	}
+	public void setPstrList(List<PstrVo> pstrList) {
+		this.pstrList = pstrList;
+	}
+	
+	
+	public List<FlmmkrVo> getFlmmkrList() {
+		return this.flmmkrList;
+	}
+	public void setFlmmkrList(List<FlmmkrVo> flmmkrList) {
+		this.flmmkrList = flmmkrList;
+	}
+	public List<ApprVo> getApprVoList() {
+		return this.apprVoList;
+	}
+	public void setApprVoList(List<ApprVo> apprVoList) {
+		this.apprVoList = apprVoList;
+	}
+	public List<GnrVo> getGnrVoList() {
+		return this.gnrVoList;
+	}
+	public void setGnrVoList(List<GnrVo> gnrVoList) {
+		this.gnrVoList = gnrVoList;
+	}
+	public List<KwrdVo> getKwrdVoList() {
+		return this.kwrdVoList;
+	}
+	public void setKwrdVoList(List<KwrdVo> kwrdVoList) {
+		this.kwrdVoList = kwrdVoList;
+	}
+	
+	
 	@Override
 	public String toString() {
 		return "MvVo [mvId=" + mvId + ", ttl=" + ttl + ", rlsDt=" + rlsDt + ", mvRating=" + mvRating + ", rnngTm="
